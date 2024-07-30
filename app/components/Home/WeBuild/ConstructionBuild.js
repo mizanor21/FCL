@@ -15,14 +15,14 @@ const ConstructionBuild = () => {
       }}
     >
       <div className=" py-20">
-        <div className="mx-5 lg:container lg:mx-auto max-w-[1200px]">
+        <div className="mx-5 lg:container lg:mx-auto lg:max-w-[1200px]">
           <div>
             <h2 className="text-3xl font-serif border-l-4 border-green-500 pl-3 uppercase">
               What We Build
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
-            <div className="p-10 border bg-white">
+            <div className="p-10 border hover:border-black duration-1000 bg-white">
               <Image src={img1} className="w-24 mb-20" alt="Building"></Image>
               <div>
                 <h3 className="text-2xl font-bold text-gray-900">
@@ -37,7 +37,7 @@ const ConstructionBuild = () => {
                 Learn More <GoArrowUpRight className="font-bold text-xl" />
               </button>
             </div>
-            <div className="p-10 border bg-white">
+            <div className="p-10 border hover:border-black duration-1000 bg-white">
               <Image src={img1} className="w-24 mb-20" alt="Building"></Image>
               <div>
                 <h3 className="text-2xl font-bold text-gray-900">
@@ -52,7 +52,7 @@ const ConstructionBuild = () => {
                 Learn More <GoArrowUpRight className="font-bold text-xl" />
               </button>
             </div>
-            <div className="p-10 border bg-white">
+            <div className="p-10 border hover:border-black duration-1000 bg-white">
               <Image src={img1} className="w-24 mb-20" alt="Building"></Image>
               <div>
                 <h3 className="text-2xl font-bold text-gray-900">

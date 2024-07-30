@@ -1,13 +1,13 @@
 const ShortAbout = () => {
   return (
     <div className="bg-white">
-      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="px-4  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pb-20">
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
             <div className="max-w-xl mb-6">
-              <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+              <h2 className=" mb-6 text-3xl font-serif border-l-4 border-green-500 pl-3 uppercase py-5">
                 Farees Construction Limited (FCL)
-                <p className="font-medium text-2xl mt-5">
+                <p className="font-medium text-xl mt-5">
                   A sister concern of MAN Enterprise
                 </p>
               </h2>
