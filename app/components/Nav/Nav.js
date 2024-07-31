@@ -98,7 +98,7 @@ const Nav = () => {
             <ul className="menu menu-horizontal px-1 uppercase">{navItems}</ul>
           </div>
           <div className="navbar-end flex items-center">
-            <button className="border border-green-700 hover:bg-green-700 hover:text-white duration-500 font-serif  rounded-full px-5 py-2 flex items-center">
+            <button className="bg-green-600 hover:bg-green-700 hover:text-white duration-500 font-serif  rounded-full px-5 py-2 flex items-center">
               Brochure <GoArrowUpRight className="font-bold text-xl" />
             </button>
           </div>

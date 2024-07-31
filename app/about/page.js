@@ -13,11 +13,10 @@ const page = () => {
               src={img1}
               alt="Construction"
             />
-            <h2 className="">About Us</h2>
           </div>
         </div>
       </div>
-      <div className="lg:container lg:max-w-[1200px] lg:mx-auto mx-5 py-20">
+      <div className="lg:container lg:max-w-[1200px] lg:mx-auto mx-5 pb-20">
         <h1 className="text-3xl font-serif mb-10">
           Farees Construction Limited (FCL)
         </h1>

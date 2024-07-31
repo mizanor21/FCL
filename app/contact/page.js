@@ -1,9 +1,22 @@
+import Image from "next/image";
 import React from "react";
+import img1 from "@/public/assets/banner/constraction.jpeg";
 
 const page = () => {
   return (
     <div>
-      <section class="py-10 bg-gray-100 sm:py-16 lg:py-24">
+      <div className="relative -top-20">
+        <div class="relative pt-48 pb-12 bg-black xl:pt-60 sm:pb-16 lg:pb-32 xl:pb-48 2xl:pb-56">
+          <div class="absolute inset-0 bg-black opacity-70">
+            <Image
+              class="relative object-cover w-full h-full"
+              src={img1}
+              alt="Construction"
+            />
+          </div>
+        </div>
+      </div>
+      <section class="">
         <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div class="max-w-2xl mx-auto text-center">
             <h2 class="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl lg:text-5xl">
@@ -187,7 +200,7 @@ const page = () => {
                     <div class="sm:col-span-2">
                       <button
                         type="submit"
-                        class="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md focus:outline-none hover:bg-blue-700 focus:bg-blue-700"
+                        class="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base font-semibold text-white transition-all duration-200 bg-green-600 border border-transparent rounded-md focus:outline-none hover:bg-green-700"
                       >
                         Send
                       </button>

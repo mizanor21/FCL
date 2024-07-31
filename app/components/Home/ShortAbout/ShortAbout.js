@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const ShortAbout = () => {
   return (
     <div className="bg-white">
@@ -19,10 +21,10 @@ const ShortAbout = () => {
               </p>
             </div>
             <div>
-              <a
-                href="/"
+              <Link
+                href="/about"
                 aria-label=""
-                className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+                className="inline-flex items-center font-serif font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
                 Learn more
                 <svg
@@ -32,7 +34,7 @@ const ShortAbout = () => {
                 >
                   <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="flex items-center justify-center -mx-4 lg:pl-8">

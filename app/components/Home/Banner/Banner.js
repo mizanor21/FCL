@@ -83,9 +83,7 @@ const Banner = () => {
                             rounded-full
                             sm:leading-8
                             text-white
-                            border-primary
                             hover:bg-white
-                            focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary
                             hover:text-black
                             sm:text-lg
                             focus:ring-offset-secondary
