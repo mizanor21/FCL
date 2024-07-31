@@ -30,9 +30,9 @@ const Banner = () => {
                 </span>
               </p>
               <p class="mt-12 font-sans text-base font-normal leading-7 text-white text-opacity-90">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu
-                penatibus pellentesque dolor consequat ligula egestas massa
-                gravida. Porttitor venenatis enim praesent.
+                Commitment to build on a tradition of trust through dedication,
+                collaboration, customer satisfaction, and value creation for a
+                green future.
               </p>
 
               <div class="flex items-center mt-5 space-x-3 sm:space-x-4">

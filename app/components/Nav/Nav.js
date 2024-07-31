@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useEffect } from "react";
-import { GoArrowUpRight } from "react-icons/go";
+import { MdOutlineFileDownload } from "react-icons/md";
 
 const Nav = () => {
   const navItems = (
@@ -56,7 +56,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <div className="fancyNav sticky top-0 z-50 font-bold font-serif text-white ">
+    <div className="fancyNav sticky top-0 z-50 font-bold font-serif text-white">
       <div className="navbar flex justify-between items-center">
         <div className="container mx-auto">
           <div className="navbar-start flex items-center">
@@ -98,9 +98,13 @@ const Nav = () => {
             <ul className="menu menu-horizontal px-1 uppercase">{navItems}</ul>
           </div>
           <div className="navbar-end flex items-center">
-            <button className="bg-green-600 hover:bg-green-700 hover:text-white duration-500 font-serif  rounded-full px-5 py-2 flex items-center">
-              Brochure <GoArrowUpRight className="font-bold text-xl" />
-            </button>
+            <a
+              href=""
+              download="FCL_Brochure.pdf"
+              className="bg-green-600 hover:bg-green-700 hover:text-white duration-500 font-serif rounded-full px-5 py-2 flex items-center"
+            >
+              Brochure <MdOutlineFileDownload className="ml-2 text-xl" />
+            </a>
           </div>
         </div>
       </div>
