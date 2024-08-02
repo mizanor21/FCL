@@ -8,9 +8,6 @@ const Nav = () => {
   const navItems = (
     <>
       <li>
-        <Link href="/">Home</Link>
-      </li>
-      <li>
         <Link href="/about">About Us</Link>
       </li>
       <li className="relative group">
@@ -28,10 +25,13 @@ const Nav = () => {
         </ul>
       </li>
       <li>
-        <Link href="/gallery">Gallery</Link>
+        <Link href="/certificates">Certificates</Link>
       </li>
       <li>
         <Link href="/organogram">Organogram</Link>
+      </li>
+      <li>
+        <Link href="/gallery">Gallery</Link>
       </li>
       <li>
         <Link href="/contact">Contact</Link>
@@ -68,7 +68,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <div className="fancyNav sticky top-0 z-50 font-bold font-serif text-white">
+    <div className="fancyNav sticky top-0 z-50 font-bold font-serif text-white shadow-md">
       <div className="navbar flex justify-between items-center">
         <div className="container mx-auto">
           <div className="navbar-start flex items-center">

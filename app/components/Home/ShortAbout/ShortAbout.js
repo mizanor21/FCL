@@ -1,4 +1,8 @@
 import Link from "next/link";
+import house from "@/public/assets/shortAbout/house.jpg";
+import road from "@/public/assets/shortAbout/road.jpeg";
+import cons from "@/public/assets/shortAbout/cons.jpg";
+import Image from "next/image";
 
 const ShortAbout = () => {
   return (
@@ -7,17 +11,20 @@ const ShortAbout = () => {
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
             <div className="max-w-xl mb-6">
-              <h2 className=" mb-6 text-3xl font-serif border-l-4 border-green-500 pl-3 uppercase py-5">
-                Farees Construction Limited (FCL)
+              <h2 className=" mb-6 text-3xl font-serif border-l-4 border-green-500 pl-3 py-5">
+                <span className="uppercase">
+                  Farees Construction <br /> Limited (FCL)
+                </span>
                 <p className="font-medium text-xl mt-5">
                   A sister concern of MAN Enterprise
                 </p>
               </h2>
 
-              <p className="text-base text-gray-700 md:text-lg text-justify">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae. explicabo.
+              <p>
+                <strong>FAREES CONSTRUCTION LIMITED (FCL)</strong> is an
+                independent engineering construction company with an objective
+                to provide complete and international standard technical
+                approach in the construction industry of Bangladesh.
               </p>
             </div>
             <div>
@@ -39,21 +46,21 @@ const ShortAbout = () => {
           </div>
           <div className="flex items-center justify-center -mx-4 lg:pl-8">
             <div className="flex flex-col items-end px-3">
-              <img
+              <Image
                 className="object-cover mb-6 rounded shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
-                src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                src={cons}
                 alt=""
               />
-              <img
-                className="object-cover w-20 h-20 rounded shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40"
-                src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+              <Image
+                className="object-cover mb-6 rounded shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
+                src={road}
                 alt=""
               />
             </div>
             <div className="px-3">
-              <img
+              <Image
                 className="object-cover w-40 h-40 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80"
-                src="https://images.pexels.com/photos/3182739/pexels-photo-3182739.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
+                src={house}
                 alt=""
               />
             </div>

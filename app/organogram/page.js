@@ -3,7 +3,7 @@ import React from "react";
 import img1 from "@/public/assets/banner/constraction.jpeg";
 import organogram from "@/public/assets/organogram/FCL_Organogram.png";
 
-const page = () => {
+const Organogram = () => {
   return (
     <div>
       <div className="relative -top-20">
@@ -33,4 +33,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Organogram;

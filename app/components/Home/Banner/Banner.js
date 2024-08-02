@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import img1 from "@/public/assets/banner/constraction.jpeg";
 import Image from "next/image";
+import ProfileCard from "../Profile/MDProfile";
 
 const Banner = () => {
   return (
@@ -69,11 +71,8 @@ const Banner = () => {
                   Recent Works
                 </a>
 
-                <a
-                  href="#"
-                  title=""
-                  class="
-                            inline-flex
+                <button
+                  className="inline-flex
                             items-center
                             justify-center
                             w-full
@@ -91,25 +90,21 @@ const Banner = () => {
                             text-white
                             hover:bg-white
                             hover:text-black
-                            sm:text-lg
-                            focus:ring-offset-secondary
-                        "
-                  role="button"
+                            sm:text-lg"
+                  onClick={() =>
+                    document.getElementById("my_modal_2").showModal()
+                  }
                 >
-                  <svg
-                    class="w-6 h-6 mr-2"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M8.0416 4.9192C7.37507 4.51928 6.5271 4.99939 6.5271 5.77669L6.5271 18.2232C6.5271 19.0005 7.37507 19.4806 8.0416 19.0807L18.4137 12.8574C19.061 12.469 19.061 11.5308 18.4137 11.1424L8.0416 4.9192Z"
-                    />
-                  </svg>
-                  Watch trailer
-                </a>
+                  MD’s Speech
+                </button>
+                <dialog id="my_modal_2" className="modal min-w-[600px]">
+                  <div className="modal-box">
+                    <ProfileCard />
+                  </div>
+                  <form method="dialog" className="modal-backdrop">
+                    <button>close</button>
+                  </form>
+                </dialog>
               </div>
             </div>
           </div>
