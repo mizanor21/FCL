@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useEffect } from "react";
+import { GoChevronDown } from "react-icons/go";
 import { MdOutlineFileDownload } from "react-icons/md";
 
 const Nav = () => {
@@ -12,11 +13,19 @@ const Nav = () => {
       <li>
         <Link href="/about">About Us</Link>
       </li>
-      <li>
-        <Link href="/equipment">Equipment</Link>
-      </li>
-      <li>
-        <Link href="/equipment-photo">Equipment Photo</Link>
+      <li className="relative group">
+        <span className="cursor-pointer">
+          Equipments
+          <GoChevronDown className="font-bold text-2xl" />
+        </span>
+        <ul className="absolute left-0 mt-9 hidden bg-white opacity-80 text-black shadow-md rounded-md group-hover:block w-60 p-5">
+          <li>
+            <Link href="/list-equipments">List Equipments</Link>
+          </li>
+          <li>
+            <Link href="/photo-equipments">Photo Equipments</Link>
+          </li>
+        </ul>
       </li>
       <li>
         <Link href="/gallery">Gallery</Link>
@@ -95,7 +104,9 @@ const Nav = () => {
             </Link>
           </div>
           <div className="navbar-center hidden lg:flex flex-grow">
-            <ul className="menu menu-horizontal px-1 uppercase">{navItems}</ul>
+            <ul className="menu menu-horizontal px-1 uppercase flex items-center">
+              {navItems}
+            </ul>
           </div>
           <div className="navbar-end flex items-center">
             <a

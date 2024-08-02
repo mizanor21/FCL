@@ -18,31 +18,36 @@ const Banner = () => {
           <div class="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
             <div class="w-full lg:w-2/3 xl:w-1/2">
               <h1 class="font-sans text-base font-normal tracking-tight text-white text-opacity-90">
-                Master the basics of baking
+                <span className="text-red-700">Farees </span>
+                <span className="text-green-700">Construction </span>
+                <span className="text-black">Limited </span>
+                <span className="text-red-700">( F</span>
+                <span className="text-green-700">C</span>
+                <span className="text-black">L )</span>
               </h1>
               <p class="mt-6 tracking-tighter text-white">
-                <span class="font-sans font-normal text-7xl">
-                  The road to the
-                </span>
-                <br />
-                <span class="font-serif italic font-normal text-8xl">
-                  perfect loaf
+                <span class="font-serif italic font-normal text-3xl md:text-4xl lg:text-6xl">
+                  <strong>For a Green Future with Trust and Quality</strong>
                 </span>
               </p>
-              <p class="mt-12 font-sans text-base font-normal leading-7 text-white text-opacity-90">
+              <p class="mt-4 font-sans text-base font-normal leading-7 text-white text-opacity-90">
                 Commitment to build on a tradition of trust through dedication,
                 collaboration, customer satisfaction, and value creation for a
                 green future.
               </p>
 
-              <div class="flex items-center mt-5 space-x-3 sm:space-x-4">
+              <div class="md:flex md:items-center mt-5 md:space-x-3">
                 <a
-                  href="#"
+                  href="#recent-works"
                   title=""
                   class="
+                            
                             inline-flex
                             items-center
                             justify-center
+                            mb-3
+                            md:mb-0
+                            w-full
                             px-5
                             py-2
                             font-sans
@@ -61,7 +66,7 @@ const Banner = () => {
                         "
                   role="button"
                 >
-                  Get started
+                  Recent Works
                 </a>
 
                 <a
@@ -71,6 +76,7 @@ const Banner = () => {
                             inline-flex
                             items-center
                             justify-center
+                            w-full
                             px-5
                             py-2
                             font-sans

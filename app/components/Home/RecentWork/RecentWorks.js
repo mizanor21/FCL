@@ -4,7 +4,7 @@ import img1 from "@/public/assets/recentWorks/constraction1.jpg";
 
 const RecentWorks = () => {
   return (
-    <div className="bg-slate-100 py-20">
+    <div className="bg-slate-100 py-20" id="recent-works">
       <div className="mx-5 lg:container lg:mx-auto lg:max-w-[1200px]">
         <div>
           <h2 className="text-3xl font-serif border-l-4 border-green-500 pl-3 uppercase">

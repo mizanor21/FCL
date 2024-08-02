@@ -5,3 +5,7 @@
 ::selection {
     @apply bg-green-600 text-white;
 }
+
+html {
+    scroll-behavior: smooth;
+}
