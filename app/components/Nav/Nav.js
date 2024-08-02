@@ -31,6 +31,9 @@ const Nav = () => {
         <Link href="/gallery">Gallery</Link>
       </li>
       <li>
+        <Link href="/organogram">Organogram</Link>
+      </li>
+      <li>
         <Link href="/contact">Contact</Link>
       </li>
     </>

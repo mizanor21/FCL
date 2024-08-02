@@ -24,6 +24,11 @@ const gallery = () => {
           </div>
         </div>
       </div>
+      <div className="mx-5 lg:container lg:mx-auto">
+        <h2 className="text-3xl font-serif border-l-4 border-green-500 pl-3 uppercase">
+          Gallery
+        </h2>
+      </div>
       <section className="py-6 dark:bg-gray-100 dark:text-gray-900">
         <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
           <Image
