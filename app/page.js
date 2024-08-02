@@ -11,8 +11,8 @@ export default function Home() {
     <main>
       <Banner></Banner>
       <ShortAbout />
-      <RecentWorks></RecentWorks>
       <ConstructionBuild />
+      <RecentWorks></RecentWorks>
       <Statistic></Statistic>
       <Company />
     </main>

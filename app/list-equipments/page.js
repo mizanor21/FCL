@@ -1,233 +1,346 @@
 import React from "react";
-import img1 from "@/public/assets/banner/constraction.jpeg";
 import Image from "next/image";
+import img1 from "@/public/assets/banner/constraction.jpeg";
+
+// Data array stored outside the component
+const equipmentList = [
+  {
+    SNo: 1,
+    Equipment: "50T Mobile Crane (wheel type)",
+    Ownership: "Own/Rent",
+    Unit: "Nos",
+    Quantity: 1,
+  },
+  {
+    SNo: 2,
+    Equipment: "25T Mobile Crane (wheel type)",
+    Ownership: "Own/Rent",
+    Unit: "Nos",
+    Quantity: 2,
+  },
+  {
+    SNo: 3,
+    Equipment: "Trailer 28 wheels",
+    Ownership: "Own/Rent",
+    Unit: "Nos",
+    Quantity: 1,
+  },
+  {
+    SNo: 4,
+    Equipment: "Cat 320 Excavator- 0.9 cum",
+    Ownership: "Own/Rent",
+    Unit: "Nos",
+    Quantity: 11,
+  },
+  {
+    SNo: 5,
+    Equipment: "Cat 320 Excavator- 0.7 cum",
+    Ownership: "Own/Rent",
+    Unit: "Nos",
+    Quantity: 19,
+  },
+  {
+    SNo: 6,
+    Equipment: "Dump Truck – 10 wheel",
+    Ownership: "Own/Rent",
+    Unit: "Nos",
+    Quantity: 27,
+  },
+  {
+    SNo: 7,
+    Equipment: "Dump Truck – 6 wheel",
+    Ownership: "Own/Rent",
+    Unit: "Nos",
+    Quantity: 13,
+  },
+  {
+    SNo: 8,
+    Equipment: "Dozer 950",
+    Ownership: "Own/Rent",
+    Unit: "Nos",
+    Quantity: 2,
+  },
+  {
+    SNo: 9,
+    Equipment: "Tafe Tractor",
+    Ownership: "Own/Rent",
+    Unit: "Nos",
+    Quantity: 5,
+  },
+  {
+    SNo: 10,
+    Equipment: "Hammer Excavator 36 Ton",
+    Ownership: "Own/Rent",
+    Unit: "Nos",
+    Quantity: 3,
+  },
+  {
+    SNo: 11,
+    Equipment: "13 Feet Motor Grader",
+    Ownership: "Own/Rent",
+    Unit: "Nos",
+    Quantity: 1,
+  },
+  {
+    SNo: 12,
+    Equipment: "9M sheet pile excavator 36 Ton",
+    Ownership: "Own/Rent",
+    Unit: "Nos",
+    Quantity: 2,
+  },
+  {
+    SNo: 13,
+    Equipment: "Hyd. Rotary Rig MAIT HR180 60M",
+    Ownership: "Own/Rent",
+    Unit: "Nos",
+    Quantity: 3,
+  },
+  {
+    SNo: 14,
+    Equipment: "Hyd. Rotary Rig MAIT HR260 70M",
+    Ownership: "Own/Rent",
+    Unit: "Nos",
+    Quantity: 1,
+  },
+  {
+    SNo: 15,
+    Equipment: "New Zoomlion130 ton crawler crane",
+    Ownership: "Own/Rent",
+    Unit: "Nos",
+    Quantity: 1,
+  },
+  {
+    SNo: 16,
+    Equipment: "Wheel Loader 3 Ton & 5 Ton",
+    Ownership: "Own/Rent",
+    Unit: "Nos",
+    Quantity: 5,
+  },
+  {
+    SNo: 17,
+    Equipment: "Fiori Concrete mixture",
+    Ownership: "Own/Rent",
+    Unit: "Nos",
+    Quantity: 2,
+  },
+  {
+    SNo: 18,
+    Equipment: "Batching plant",
+    Ownership: "Own/Rent",
+    Unit: "Nos",
+    Quantity: 1,
+  },
+  {
+    SNo: 19,
+    Equipment:
+      "Reverse Circulation Rotary Drilling Rig capable to Drill 28’’ x 24’’, 22” dia & bore hole upto 1200ft below Ground Level in Alluvium soils by 6’’/150mm dia drill pipes",
+    Ownership: "Own",
+    Unit: "Nos",
+    Quantity: 4,
+  },
+  {
+    SNo: 20,
+    Equipment: "Water Jetting Set with Compressor (800 PSI)",
+    Ownership: "Own",
+    Unit: "Nos",
+    Quantity: 2,
+  },
+  {
+    SNo: 21,
+    Equipment: "Generator Capacity 350 KVA",
+    Ownership: "Own",
+    Unit: "Nos",
+    Quantity: 4,
+  },
+  {
+    SNo: 22,
+    Equipment: "Geo-Logger",
+    Ownership: "Own",
+    Unit: "Nos",
+    Quantity: 1,
+  },
+  {
+    SNo: 23,
+    Equipment:
+      "BS 410 or ASTM Standard Set/Sand Testing Sieves ASTM 8” dia Mesh No. 4 8 10 16 18 35 60 100 pan and lid.",
+    Ownership: "Own",
+    Unit: "Nos",
+    Quantity: 1,
+  },
+  {
+    SNo: 24,
+    Equipment: "Burner/Heater",
+    Ownership: "Own",
+    Unit: "Nos",
+    Quantity: 1,
+  },
+  {
+    SNo: 25,
+    Equipment: "Accurate Weighing balance complete set",
+    Ownership: "Own",
+    Unit: "Set",
+    Quantity: 1,
+  },
+  {
+    SNo: 26,
+    Equipment: "Pipe Jointing Equipment (butt fusion/electro fusion machine)",
+    Ownership: "Own",
+    Unit: "Nos",
+    Quantity: 4,
+  },
+  {
+    SNo: 27,
+    Equipment: "Pressure Testing Equipment for supply Network installed",
+    Ownership: "Own",
+    Unit: "Nos",
+    Quantity: 4,
+  },
+  {
+    SNo: 28,
+    Equipment: "Asphalt Cutter",
+    Ownership: "Own",
+    Unit: "Nos",
+    Quantity: 3,
+  },
+  {
+    SNo: 29,
+    Equipment: "De-watering Pump",
+    Ownership: "Own",
+    Unit: "Nos",
+    Quantity: 2,
+  },
+  {
+    SNo: 30,
+    Equipment: "Compaction Machine",
+    Ownership: "Own",
+    Unit: "Nos",
+    Quantity: 4,
+  },
+  {
+    SNo: 31,
+    Equipment: "Air Compressor 283/Liter/second",
+    Ownership: "Own",
+    Unit: "Nos",
+    Quantity: 2,
+  },
+  {
+    SNo: 32,
+    Equipment: "Generator Capacity 550 KVA",
+    Ownership: "Own",
+    Unit: "Nos",
+    Quantity: 1,
+  },
+  {
+    SNo: 33,
+    Equipment: "Generator for Welding",
+    Ownership: "Own",
+    Unit: "Nos",
+    Quantity: 3,
+  },
+  {
+    SNo: 34,
+    Equipment: "Submersible pumps 3.0 Cusec 110m Head",
+    Ownership: "Own",
+    Unit: "Nos",
+    Quantity: 2,
+  },
+  {
+    SNo: 35,
+    Equipment: "Welding Plant",
+    Ownership: "Own",
+    Unit: "Nos",
+    Quantity: 2,
+  },
+  {
+    SNo: 36,
+    Equipment: "Complete set of Gas Cutter Equipments",
+    Ownership: "Own",
+    Unit: "Set",
+    Quantity: 2,
+  },
+  {
+    SNo: 37,
+    Equipment: "150mm dia Drilling Pipe with threat/Flange",
+    Ownership: "Own",
+    Unit: "Meter",
+    Quantity: 1100,
+  },
+  {
+    SNo: 38,
+    Equipment: "150mm dia Column Pipe",
+    Ownership: "Own",
+    Unit: "Meter",
+    Quantity: 400,
+  },
+  {
+    SNo: 39,
+    Equipment: "Vertically Test Equipments",
+    Ownership: "Own",
+    Unit: "Nos",
+    Quantity: 1,
+  },
+  {
+    SNo: 40,
+    Equipment: "Necessary Vehicles (L.S)",
+    Ownership: "Own",
+    Unit: "Nos",
+    Quantity: "L.S",
+  },
+  {
+    SNo: 41,
+    Equipment:
+      "Other related equipments (HDD Machine, Pipe Busting Machine, Water Tanker, Pickup, Crane Truck, Drum Truck, Sedan Car, Pajero Jeep, Haval Jeep)",
+    Ownership: "Own",
+    Unit: "Nos",
+    Quantity: "",
+  },
+];
 
 const Equipment = () => {
   return (
-    <div className="">
+    <div>
       <div className="relative -top-20">
-        <div class="relative pt-48 pb-12 bg-black xl:pt-60 sm:pb-16 lg:pb-32 xl:pb-48 2xl:pb-56">
-          <div class="absolute inset-0 bg-black opacity-70">
+        <div className="relative pt-48 pb-12 bg-black xl:pt-60 sm:pb-16 lg:pb-32 xl:pb-48 2xl:pb-56">
+          <div className="absolute inset-0 bg-black opacity-70">
             <Image
-              class="relative object-cover w-full h-full"
+              className="relative object-cover w-full h-full"
               src={img1}
               alt="Construction"
+              layout="fill"
+              objectFit="cover"
+              priority
             />
           </div>
         </div>
       </div>
-      <div className="mx-5 lg:container lg:mx-auto pb-20">
-        <div className="">
-          <h2 className="text-3xl font-serif border-l-4 border-green-500 pl-3 uppercase">
-            List Of Equipment
-          </h2>
-        </div>
+      <div className="mx-5 lg:container lg:mx-auto lg:max-w-[1200px] pb-20">
+        <h2 className="text-3xl font-serif border-l-4 border-green-500 pl-3 uppercase">
+          List Of Equipment
+        </h2>
         <div className="overflow-x-auto mt-5">
-          <table className="table table-xs">
+          <table className="table-auto w-full border-collapse lg:max-w-[1200px]">
             <thead>
               <tr>
-                <th></th>
-                <th>Equipment Type and Characteristics</th>
-                <th>Ownership</th>
-                <th>Unit</th>
-                <th>Quantity</th>
-                <th>Last Login</th>
-                <th>Favorite Color</th>
+                <th className="border p-2 text-left">S/No</th>
+                <th className="border p-2 text-left">
+                  Equipment Type and Characteristics
+                </th>
+                <th className="border p-2 text-left">Ownership</th>
+                <th className="border p-2 text-left">Unit</th>
+                <th className="border p-2 text-left">Quantity</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th>1</th>
-                <td>Cy Ganderton</td>
-                <td>Quality Control Specialist</td>
-                <td>Littel, Schaden and Vandervort</td>
-                <td>Canada</td>
-                <td>12/16/2020</td>
-                <td>Blue</td>
-              </tr>
-              <tr>
-                <th>2</th>
-                <td>Hart Hagerty</td>
-                <td>Desktop Support Technician</td>
-                <td>Zemlak, Daniel and Leannon</td>
-                <td>United States</td>
-                <td>12/5/2020</td>
-                <td>Purple</td>
-              </tr>
-              <tr>
-                <th>3</th>
-                <td>Brice Swyre</td>
-                <td>Tax Accountant</td>
-                <td>Carroll Group</td>
-                <td>China</td>
-                <td>8/15/2020</td>
-                <td>Red</td>
-              </tr>
-              <tr>
-                <th>4</th>
-                <td>Marjy Ferencz</td>
-                <td>Office Assistant I</td>
-                <td>Rowe-Schoen</td>
-                <td>Russia</td>
-                <td>3/25/2021</td>
-                <td>Crimson</td>
-              </tr>
-              <tr>
-                <th>5</th>
-                <td>Yancy Tear</td>
-                <td>Community Outreach Specialist</td>
-                <td>Wyman-Ledner</td>
-                <td>Brazil</td>
-                <td>5/22/2020</td>
-                <td>Indigo</td>
-              </tr>
-              <tr>
-                <th>6</th>
-                <td>Irma Vasilik</td>
-                <td>Editor</td>
-                <td>Wiza, Bins and Emard</td>
-                <td>Venezuela</td>
-                <td>12/8/2020</td>
-                <td>Purple</td>
-              </tr>
-              <tr>
-                <th>7</th>
-                <td>Meghann Durtnal</td>
-                <td>Staff Accountant IV</td>
-                <td>Schuster-Schimmel</td>
-                <td>Philippines</td>
-                <td>2/17/2021</td>
-                <td>Yellow</td>
-              </tr>
-              <tr>
-                <th>8</th>
-                <td>Sammy Seston</td>
-                <td>Accountant I</td>
-                <td>O&apos;Hara, Welch and Keebler</td>
-                <td>Indonesia</td>
-                <td>5/23/2020</td>
-                <td>Crimson</td>
-              </tr>
-              <tr>
-                <th>9</th>
-                <td>Lesya Tinham</td>
-                <td>Safety Technician IV</td>
-                <td>Turner-Kuhlman</td>
-                <td>Philippines</td>
-                <td>2/21/2021</td>
-                <td>Maroon</td>
-              </tr>
-              <tr>
-                <th>10</th>
-                <td>Zaneta Tewkesbury</td>
-                <td>VP Marketing</td>
-                <td>Sauer LLC</td>
-                <td>Chad</td>
-                <td>6/23/2020</td>
-                <td>Green</td>
-              </tr>
-              <tr>
-                <th>11</th>
-                <td>Andy Tipple</td>
-                <td>Librarian</td>
-                <td>Hilpert Group</td>
-                <td>Poland</td>
-                <td>7/9/2020</td>
-                <td>Indigo</td>
-              </tr>
-              <tr>
-                <th>12</th>
-                <td>Sophi Biles</td>
-                <td>Recruiting Manager</td>
-                <td>Gutmann Inc</td>
-                <td>Indonesia</td>
-                <td>2/12/2021</td>
-                <td>Maroon</td>
-              </tr>
-              <tr>
-                <th>13</th>
-                <td>Florida Garces</td>
-                <td>Web Developer IV</td>
-                <td>Gaylord, Pacocha and Baumbach</td>
-                <td>Poland</td>
-                <td>5/31/2020</td>
-                <td>Purple</td>
-              </tr>
-              <tr>
-                <th>14</th>
-                <td>Maribeth Popping</td>
-                <td>Analyst Programmer</td>
-                <td>Deckow-Pouros</td>
-                <td>Portugal</td>
-                <td>4/27/2021</td>
-                <td>Aquamarine</td>
-              </tr>
-              <tr>
-                <th>15</th>
-                <td>Moritz Dryburgh</td>
-                <td>Dental Hygienist</td>
-                <td>Schiller, Cole and Hackett</td>
-                <td>Sri Lanka</td>
-                <td>8/8/2020</td>
-                <td>Crimson</td>
-              </tr>
-              <tr>
-                <th>16</th>
-                <td>Reid Semiras</td>
-                <td>Teacher</td>
-                <td>Sporer, Sipes and Rogahn</td>
-                <td>Poland</td>
-                <td>7/30/2020</td>
-                <td>Green</td>
-              </tr>
-              <tr>
-                <th>17</th>
-                <td>Alec Lethby</td>
-                <td>Teacher</td>
-                <td>Reichel, Glover and Hamill</td>
-                <td>China</td>
-                <td>2/28/2021</td>
-                <td>Khaki</td>
-              </tr>
-              <tr>
-                <th>18</th>
-                <td>Aland Wilber</td>
-                <td>Quality Control Specialist</td>
-                <td>Kshlerin, Rogahn and Swaniawski</td>
-                <td>Czech Republic</td>
-                <td>9/29/2020</td>
-                <td>Purple</td>
-              </tr>
-              <tr>
-                <th>19</th>
-                <td>Teddie Duerden</td>
-                <td>Staff Accountant III</td>
-                <td>Pouros, Ullrich and Windler</td>
-                <td>France</td>
-                <td>10/27/2020</td>
-                <td>Aquamarine</td>
-              </tr>
-              <tr>
-                <th>20</th>
-                <td>Lorelei Blackstone</td>
-                <td>Data Coordiator</td>
-                <td>Witting, Kutch and Greenfelder</td>
-                <td>Kazakhstan</td>
-                <td>6/3/2020</td>
-                <td>Red</td>
-              </tr>
+              {equipmentList.map((item) => (
+                <tr key={item.SNo}>
+                  <td className="border p-2 font-bold">{item.SNo}</td>
+                  <td className="border p-2">{item.Equipment}</td>
+                  <td className="border p-2">{item.Ownership}</td>
+                  <td className="border p-2">{item.Unit}</td>
+                  <td className="border p-2">{item.Quantity}</td>
+                </tr>
+              ))}
             </tbody>
-            <tfoot>
-              <tr>
-                <th></th>
-                <th>Name</th>
-                <th>Job</th>
-                <th>company</th>
-                <th>location</th>
-                <th>Last Login</th>
-                <th>Favorite Color</th>
-              </tr>
-            </tfoot>
           </table>
         </div>
       </div>
