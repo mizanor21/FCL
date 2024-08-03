@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import img1 from "@/public/assets/banner/constraction.jpeg";
-import organogram from "@/public/assets/organogram/FCL_Organogram.png";
+import govedCertificate from "@/public/assets/certificats/goved.jpeg";
 
 const Certificates = () => {
   return (
@@ -23,7 +23,7 @@ const Certificates = () => {
         </h2>
         <div>
           <Image
-            src={organogram}
+            src={govedCertificate}
             className="min-w-[900px]"
             alt="Organogram"
           ></Image>
