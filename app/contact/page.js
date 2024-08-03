@@ -47,10 +47,13 @@ const page = () => {
                     />
                   </svg>
                   <p class="mt-6 text-lg font-medium text-gray-900">
-                    +1-316-555-0116
+                    Office: +88-02-510550022
                   </p>
                   <p class="mt-1 text-lg font-medium text-gray-900">
-                    +1-446-526-0117
+                    Cell: +88-01746-475887
+                  </p>
+                  <p class="mt-1 text-lg font-medium text-gray-900">
+                    WhatsApp: +88-01745-720832
                   </p>
                 </div>
               </div>
@@ -72,10 +75,7 @@ const page = () => {
                     />
                   </svg>
                   <p class="mt-6 text-lg font-medium text-gray-900">
-                    contact@example.com
-                  </p>
-                  <p class="mt-1 text-lg font-medium text-gray-900">
-                    hr@example.com
+                    rbornali@yahoo.com
                   </p>
                 </div>
               </div>
@@ -102,9 +102,9 @@ const page = () => {
                       d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                     />
                   </svg>
-                  <p class="mt-6 text-lg font-medium leading-relaxed text-gray-900">
-                    8502 Preston Rd. Ingle, Maine 98380, USA
-                  </p>
+                  <address class="mt-6 text-lg font-medium leading-relaxed text-gray-900">
+                    House # 657, Road # 10, Avenue # 4, Mirpur DOHS, Dhaka-1216
+                  </address>
                 </div>
               </div>
             </div>
@@ -200,7 +200,7 @@ const page = () => {
                     <div class="sm:col-span-2">
                       <button
                         type="submit"
-                        class="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base font-semibold text-white transition-all duration-200 bg-green-600 border border-transparent rounded-md focus:outline-none hover:bg-green-700"
+                        class="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base font-semibold text-white transition-all duration-200 bg-green-900 border border-transparent rounded-md focus:outline-none hover:bg-green-700"
                       >
                         Send
                       </button>
