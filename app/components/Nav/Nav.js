@@ -1,9 +1,11 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
 import { GoChevronDown } from "react-icons/go";
 import { MdOutlineFileDownload } from "react-icons/md";
+import logo from "@/public/assets/logo/logo.png";
 
 const Nav = () => {
   const onButtonClick = () => {
@@ -27,7 +29,7 @@ const Nav = () => {
         <span className="cursor-pointer flex items-center">
           Equipments <GoChevronDown className="ml-1 font-bold text-2xl" />
         </span>
-        <ul className="absolute left-0 mt-2 hidden bg-white opacity-80 text-black shadow-md rounded-md group-hover:block w-60 p-2">
+        <ul className="absolute left-0 mt-10 hidden bg-white opacity-80 text-black shadow-md rounded-md group-hover:block w-60 p-2">
           <li>
             <Link href="/list-equipments">List Equipments</Link>
           </li>
@@ -110,10 +112,13 @@ const Nav = () => {
                 {navItems}
               </ul>
             </div>
-            <Link href="/" className="text-3xl font-serif pl-5">
-              <span className="text-red-700">F</span>
-              <span className="text-green-700">C</span>
-              <span className="text-black">L</span>
+            <Link href="/" className="text-3xl font-serif">
+              <Image
+                src={logo}
+                className="w-12"
+                title="Farees Construction Limited (FCL)"
+                alt="FCL logo"
+              ></Image>
             </Link>
           </div>
           <div className="navbar-center hidden lg:flex flex-grow">

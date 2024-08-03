@@ -1,8 +1,8 @@
 import "./Brand.css";
 import brand1 from "@/public/assets/company/airforce_logo.png";
 import brand2 from "@/public/assets/company/BUP_logo.png";
-import brand3 from "@/public/assets/company/airforce_logo.png";
-import brand4 from "@/public/assets/company/airforce_logo.png";
+import brand3 from "@/public/assets/company/army_logo.svg";
+import brand4 from "@/public/assets/company/navy_logo.png";
 import brand5 from "@/public/assets/company/airforce_logo.png";
 import Image from "next/image";
 // import brand5 from "../../../assets/images/l-5.png";
@@ -20,7 +20,7 @@ const Company = () => {
   return (
     <div className="my-20 ">
       <h3 className="text-center mb-10 text-4xl font-semibold text-[#185C5D]">
-        Our Beloved Brands
+        Our Valuable Clients
       </h3>
       <div className="carousel-wrapper mb-5">
         <div className="carousel-container carousel-container-1">
