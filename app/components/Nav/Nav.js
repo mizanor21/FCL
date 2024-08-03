@@ -31,10 +31,10 @@ const Nav = () => {
         </span>
         <ul className="absolute left-0 mt-10 hidden bg-white opacity-80 text-black shadow-md rounded-md group-hover:block w-60 p-2">
           <li>
-            <Link href="/list-equipments">List Equipments</Link>
+            <Link href="/list-equipments">Equipments List</Link>
           </li>
           <li>
-            <Link href="/photo-equipments">Photo Equipments</Link>
+            <Link href="/photo-equipments">Equipments Photos</Link>
           </li>
         </ul>
       </li>
