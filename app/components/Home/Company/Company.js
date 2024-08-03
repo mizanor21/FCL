@@ -26,91 +26,91 @@ const Company = () => {
         <div className="carousel-container carousel-container-1">
           <div className="carousel-item">
             <Image
-              className="saturate-0 hover:saturate-100"
+              className="w-40 h-40 hover:saturate-0"
               src={brand1}
               alt="Brand 1"
             />
           </div>
           <div className="carousel-item">
             <Image
-              className="saturate-0  hover:saturate-100"
+              className="w-40 h-40 hover:saturate-0"
               src={brand2}
               alt="Brand 2"
             />
           </div>
           <div className="carousel-item">
             <Image
-              className="saturate-0  hover:saturate-100"
+              className="w-40 h-40 hover:saturate-0"
               src={brand3}
               alt="Brand 3"
             />
           </div>
           <div className="carousel-item">
             <Image
-              className="saturate-0  hover:saturate-100"
+              className="w-40 h-40 hover:saturate-0"
               src={brand4}
               alt="Brand 5"
             />
           </div>
           <div className="carousel-item">
             <Image
-              className="saturate-0  hover:saturate-100"
+              className="w-40 h-40 hover:saturate-0"
               src={brand5}
               alt="Brand 6"
             />
           </div>
           <div className="carousel-item">
             <Image
-              className="saturate-0  hover:saturate-100"
+              className="w-40 h-40 hover:saturate-0"
               src={brand5}
               alt="Brand 7"
             />
           </div>
           <div className="carousel-item">
             <Image
-              className="saturate-0  hover:saturate-100"
+              className="w-40 h-40 hover:saturate-0"
               src={brand5}
               alt="Brand 10"
             />
           </div>
           <div className="carousel-item">
             <Image
-              className="saturate-0  hover:saturate-100"
+              className="w-40 h-40 hover:saturate-0"
               src={brand5}
               alt="Brand 12"
             />
           </div>
           <div className="carousel-item">
             <Image
-              className="saturate-0  hover:saturate-100"
+              className="w-40 h-40 hover:saturate-0"
               src={brand5}
               alt="Brand 8"
             />
           </div>
           <div className="carousel-item">
             <Image
-              className="saturate-0  hover:saturate-100"
+              className="w-40 h-40 hover:saturate-0"
               src={brand5}
               alt="Brand 13"
             />
           </div>
           <div className="carousel-item">
             <Image
-              className="saturate-0  hover:saturate-100"
+              className="w-40 h-40 hover:saturate-0"
               src={brand5}
               alt="Brand 14"
             />
           </div>
           <div className="carousel-item">
             <Image
-              className="saturate-0  hover:saturate-100"
+              className="w-40 h-40 hover:saturate-0"
               src={brand5}
               alt="Brand 17"
             />
           </div>
           <div className="carousel-item">
             <Image
-              className="saturate-0  hover:saturate-100"
+              className="w-40 h-40 hover:saturate-0"
               src={brand5}
               alt="Brand 18"
             />
@@ -121,91 +121,91 @@ const Company = () => {
         <div className="carousel-container carousel-container-2 flex flex-row-reverse">
           <div className="carousel-item">
             <Image
-              className="saturate-0  hover:saturate-100"
+              className="w-40 h-40 hover:saturate-0"
               src={brand1}
               alt="Brand 1"
             />
           </div>
           <div className="carousel-item">
             <Image
-              className="saturate-0  hover:saturate-100"
+              className="w-40 h-40 hover:saturate-0"
               src={brand2}
               alt="Brand 2"
             />
           </div>
           <div className="carousel-item">
             <Image
-              className="saturate-0  hover:saturate-100"
+              className="w-40 h-40 hover:saturate-0"
               src={brand3}
               alt="Brand 3"
             />
           </div>
           <div className="carousel-item">
             <Image
-              className="saturate-0  hover:saturate-100"
+              className="w-40 h-40 hover:saturate-0"
               src={brand4}
               alt="Brand 5"
             />
           </div>
           <div className="carousel-item">
             <Image
-              className="saturate-0  hover:saturate-100"
+              className="w-40 h-40 hover:saturate-0"
               src={brand5}
               alt="Brand 6"
             />
           </div>
           <div className="carousel-item">
             <Image
-              className="saturate-0  hover:saturate-100"
+              className="w-40 h-40 hover:saturate-0"
               src={brand5}
               alt="Brand 7"
             />
           </div>
           <div className="carousel-item">
             <Image
-              className="saturate-0  hover:saturate-100"
+              className="w-40 h-40 hover:saturate-0"
               src={brand5}
               alt="Brand 10"
             />
           </div>
           <div className="carousel-item">
             <Image
-              className="saturate-0  hover:saturate-100"
+              className="w-40 h-40 hover:saturate-0"
               src={brand5}
               alt="Brand 12"
             />
           </div>
           <div className="carousel-item">
             <Image
-              className="saturate-0  hover:saturate-100"
+              className="w-40 h-40 hover:saturate-0"
               src={brand5}
               alt="Brand 8"
             />
           </div>
           <div className="carousel-item">
             <Image
-              className="saturate-0  hover:saturate-100"
+              className="w-40 h-40 hover:saturate-0"
               src={brand5}
               alt="Brand 13"
             />
           </div>
           <div className="carousel-item">
             <Image
-              className="saturate-0  hover:saturate-100"
+              className="w-40 h-40 hover:saturate-0"
               src={brand5}
               alt="Brand 14"
             />
           </div>
           <div className="carousel-item">
             <Image
-              className="saturate-0  hover:saturate-100"
+              className="w-40 h-40 hover:saturate-0"
               src={brand5}
               alt="Brand 17"
             />
           </div>
           <div className="carousel-item">
             <Image
-              className="saturate-0  hover:saturate-100"
+              className="w-40 h-40 hover:saturate-0"
               src={brand5}
               alt="Brand 18"
             />

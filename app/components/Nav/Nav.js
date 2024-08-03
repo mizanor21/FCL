@@ -1,21 +1,33 @@
 "use client";
+
 import Link from "next/link";
 import { useEffect } from "react";
 import { GoChevronDown } from "react-icons/go";
 import { MdOutlineFileDownload } from "react-icons/md";
 
 const Nav = () => {
+  const onButtonClick = () => {
+    fetch("/assets/documents/FCL_Brochure.pdf").then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+        const alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "FCL_Brochure.pdf";
+        alink.click();
+      });
+    });
+  };
+
   const navItems = (
     <>
       <li>
         <Link href="/about">About Us</Link>
       </li>
       <li className="relative group">
-        <span className="cursor-pointer">
-          Equipments
-          <GoChevronDown className="font-bold text-2xl" />
+        <span className="cursor-pointer flex items-center">
+          Equipments <GoChevronDown className="ml-1 font-bold text-2xl" />
         </span>
-        <ul className="absolute left-0 mt-9 hidden bg-white opacity-80 text-black shadow-md rounded-md group-hover:block w-60 p-5">
+        <ul className="absolute left-0 mt-2 hidden bg-white opacity-80 text-black shadow-md rounded-md group-hover:block w-60 p-2">
           <li>
             <Link href="/list-equipments">List Equipments</Link>
           </li>
@@ -42,9 +54,7 @@ const Nav = () => {
   const handleScroll = () => {
     const navbar = document.querySelector(".fancyNav");
     if (navbar) {
-      const scrollY = window.scrollY;
-
-      if (scrollY > window.innerHeight * 0.3) {
+      if (window.scrollY > window.innerHeight * 0.3) {
         navbar.classList.add(
           "bg-gradient-to-r",
           "from-green-400",
@@ -70,7 +80,7 @@ const Nav = () => {
   return (
     <div className="fancyNav sticky top-0 z-50 font-bold font-serif text-white shadow-md">
       <div className="navbar flex justify-between items-center">
-        <div className="container mx-auto">
+        <div className="container mx-auto flex justify-between items-center">
           <div className="navbar-start flex items-center">
             <div className="dropdown">
               <div
@@ -113,9 +123,9 @@ const Nav = () => {
           </div>
           <div className="navbar-end flex items-center">
             <a
-              href=""
-              download="FCL_Brochure.pdf"
-              className="bg-green-600 hover:bg-green-700 hover:text-white duration-500 font-serif rounded-full px-5 py-2 flex items-center"
+              onClick={onButtonClick}
+              href="#"
+              className="bg-green-600 hover:bg-green-700 hover:text-white duration-500 font-serif rounded-full px-5 py-2 flex items-center cursor-pointer"
             >
               Brochure <MdOutlineFileDownload className="ml-2 text-xl" />
             </a>
