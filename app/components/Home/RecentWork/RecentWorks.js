@@ -14,7 +14,7 @@ const RecentWorks = () => {
     <div className="py-20" id="recent-works">
       <div className="mx-5 lg:container lg:mx-auto">
         <div>
-          <h2 className="text-3xl font-serif border-l-4 border-green-500 hover:bg-opacity-50 pl-3 uppercase">
+          <h2 className="text-3xl font-serif border-l-4 border-green-700 hover:bg-opacity-50 pl-3 uppercase">
             Recent Works
           </h2>
         </div>
@@ -27,7 +27,7 @@ const RecentWorks = () => {
               objectFit="cover"
             />
             <div className="absolute inset-0 bg-black opacity-30"></div>
-            <div className="absolute bottom-0 p-5 border-b-4 border-green-500 w-full hover:bg-green-500 hover:bg-opacity-50 duration-1000">
+            <div className="absolute bottom-0 p-5 border-b-4 border-green-700 w-full hover:bg-green-900 hover:bg-opacity-50 duration-1000">
               <h2 className="text-2xl font-serif text-white font-bold">
                 PSO Banglow, Dhaka Cantonment.
               </h2>
@@ -49,7 +49,7 @@ const RecentWorks = () => {
               objectFit="cover"
             />
             <div className="absolute inset-0 bg-black opacity-30"></div>
-            <div className="absolute bottom-0 p-5 border-b-4 border-green-500 w-full hover:bg-green-500 hover:bg-opacity-50 duration-1000">
+            <div className="absolute bottom-0 p-5 border-b-4 border-green-700 w-full hover:bg-green-900 hover:bg-opacity-50 duration-1000">
               <h2 className="text-2xl font-serif text-white font-bold">
                 7.5 km Flexible Road’s Pavement
               </h2>
@@ -71,7 +71,7 @@ const RecentWorks = () => {
               objectFit="cover"
             />
             <div className="absolute inset-0 bg-black opacity-30"></div>
-            <div className="absolute bottom-0 p-5 border-b-4 border-green-500 w-full hover:bg-green-500 hover:bg-opacity-50 duration-1000">
+            <div className="absolute bottom-0 p-5 border-b-4 border-green-700 w-full hover:bg-green-900 hover:bg-opacity-50 duration-1000">
               <h2 className="text-2xl font-serif text-white font-bold">
                 Jolshiri Drainage & Swerege Network
               </h2>
@@ -93,7 +93,7 @@ const RecentWorks = () => {
               objectFit="cover"
             />
             <div className="absolute inset-0 bg-black opacity-30"></div>
-            <div className="absolute bottom-0 p-5 border-b-4 border-green-500 w-full hover:bg-green-500 hover:bg-opacity-50 duration-1000">
+            <div className="absolute bottom-0 p-5 border-b-4 border-green-700 w-full hover:bg-green-900 hover:bg-opacity-50 duration-1000">
               <h2 className="text-2xl font-serif text-white font-bold">
                 Construction of Non-Process Building (NPB)
               </h2>
@@ -115,7 +115,7 @@ const RecentWorks = () => {
               objectFit="cover"
             />
             <div className="absolute inset-0 bg-black opacity-30"></div>
-            <div className="absolute bottom-0 p-5 border-b-4 border-green-500 w-full hover:bg-green-500 hover:bg-opacity-50 duration-1000">
+            <div className="absolute bottom-0 p-5 border-b-4 border-green-700 w-full hover:bg-green-900 hover:bg-opacity-50 duration-1000">
               <h2 className="text-2xl font-serif text-white font-bold">
                 Raw Water Flow Measurement Chamber
               </h2>
@@ -137,7 +137,7 @@ const RecentWorks = () => {
               objectFit="cover"
             />
             <div className="absolute inset-0 bg-black opacity-30"></div>
-            <div className="absolute bottom-0 p-5 border-b-4 border-green-500 w-full hover:bg-green-500 hover:bg-opacity-50 duration-1000">
+            <div className="absolute bottom-0 p-5 border-b-4 border-green-700 w-full hover:bg-green-900 hover:bg-opacity-50 duration-1000">
               <h2 className="text-2xl font-serif text-white font-bold">
                 UN Vehicle Repair Shed
               </h2>

@@ -59,15 +59,15 @@ const Nav = () => {
       if (window.scrollY > window.innerHeight * 0.3) {
         navbar.classList.add(
           "bg-gradient-to-r",
-          "from-green-400",
-          "bg-green-600",
+          "from-green-800",
+          "bg-green-900",
           "text-black"
         );
       } else {
         navbar.classList.remove(
           "bg-gradient-to-r",
-          "from-green-400",
-          "bg-green-600",
+          "from-green-800",
+          "bg-green-900",
           "text-black"
         );
       }
@@ -130,7 +130,7 @@ const Nav = () => {
             <a
               onClick={onButtonClick}
               href="#"
-              className="bg-green-600 hover:bg-green-700 hover:text-white duration-500 font-serif rounded-full px-5 py-2 flex items-center cursor-pointer"
+              className="bg-green-800 hover:bg-green-700 hover:text-white duration-500 font-serif rounded-full px-5 py-2 flex items-center cursor-pointer"
             >
               Brochure <MdOutlineFileDownload className="ml-2 text-xl" />
             </a>

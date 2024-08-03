@@ -20,12 +20,7 @@ const Banner = () => {
           <div class="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
             <div class="w-full lg:w-2/3 xl:w-1/2">
               <h1 class="font-sans text-base font-normal tracking-tight text-white text-opacity-90">
-                <span className="text-red-700">Farees </span>
-                <span className="text-green-700">Construction </span>
-                <span className="text-black">Limited </span>
-                <span className="text-red-700">( F</span>
-                <span className="text-green-700">C</span>
-                <span className="text-black">L )</span>
+                <span>Farees Construction Limited (FCL)</span>
               </h1>
               <p class="mt-6 tracking-tighter text-white">
                 <span class="font-serif italic font-normal text-3xl md:text-4xl lg:text-6xl">

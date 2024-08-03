@@ -13,7 +13,7 @@ export default function Home() {
       <ShortAbout />
       <ConstructionBuild />
       <RecentWorks></RecentWorks>
-      <Statistic></Statistic>
+      {/* <Statistic></Statistic> */}
       <Company />
     </main>
   );
