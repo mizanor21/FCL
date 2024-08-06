@@ -18,7 +18,7 @@ const Certificates = () => {
         </div>
       </div>
       <div className="lg:container mx-5 lg:mx-auto ">
-        <h2 className="text-3xl font-serif border-l-4 border-green-500 hover:bg-opacity-50 pl-3 uppercase">
+        <h2 className="text-3xl  border-l-4 border-green-500 hover:bg-opacity-50 pl-3 uppercase">
           Certificates
         </h2>
         <div>

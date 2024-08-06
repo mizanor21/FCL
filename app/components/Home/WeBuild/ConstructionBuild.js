@@ -19,7 +19,7 @@ const ConstructionBuild = () => {
       <div className=" py-20">
         <div className="mx-5 lg:container lg:mx-auto lg:max-w-[1200px]">
           <div>
-            <h2 className="text-3xl font-serif border-l-4 border-green-500 pl-3 uppercase">
+            <h2 className="text-3xl  border-l-4 border-green-500 pl-3 uppercase">
               What We Build
             </h2>
           </div>
@@ -40,7 +40,7 @@ const ConstructionBuild = () => {
                   barriers.
                 </p>
               </div>
-              <button className="border border-black hover:bg-black hover:text-white duration-500 font-serif  rounded-full px-5 py-2 mt-10 flex items-center">
+              <button className="border border-black hover:bg-black hover:text-white duration-500   rounded-full px-5 py-2 mt-10 flex items-center">
                 Learn More <GoArrowUpRight className="font-bold text-xl" />
               </button>
             </div>
@@ -56,7 +56,7 @@ const ConstructionBuild = () => {
                   the local transportation network.
                 </p>
               </div>
-              <button className="border border-black hover:bg-black hover:text-white duration-500 font-serif  rounded-full px-5 py-2 mt-10 flex items-center">
+              <button className="border border-black hover:bg-black hover:text-white duration-500   rounded-full px-5 py-2 mt-10 flex items-center">
                 Learn More <GoArrowUpRight className="font-bold text-xl" />
               </button>
             </div>
@@ -76,7 +76,7 @@ const ConstructionBuild = () => {
                   and comfort.
                 </p>
               </div>
-              <button className="border border-black hover:bg-black hover:text-white duration-500 font-serif  rounded-full px-5 py-2 mt-10 flex items-center">
+              <button className="border border-black hover:bg-black hover:text-white duration-500   rounded-full px-5 py-2 mt-10 flex items-center">
                 Learn More <GoArrowUpRight className="font-bold text-xl" />
               </button>
             </div>

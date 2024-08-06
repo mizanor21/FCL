@@ -11,7 +11,7 @@ const ShortAbout = () => {
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
             <div className="max-w-xl mb-6">
-              <h2 className=" mb-6 text-3xl font-serif border-l-4 border-green-500 pl-3 py-5">
+              <h2 className=" mb-6 text-3xl  border-l-4 border-green-500 pl-3 py-5">
                 <span className="uppercase">
                   Farees Construction <br /> Limited (FCL)
                 </span>
@@ -31,7 +31,7 @@ const ShortAbout = () => {
               <Link
                 href="/about"
                 aria-label=""
-                className="inline-flex items-center font-serif font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+                className="inline-flex items-center  font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
                 Learn more
                 <svg

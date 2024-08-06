@@ -19,11 +19,11 @@ const Banner = () => {
         <div class="relative">
           <div class="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
             <div class="w-full lg:w-2/3 xl:w-1/2">
-              <h1 class="font-sans text-base font-normal tracking-tight text-white text-opacity-90">
+              <h1 class="font-sans text-base font-bold tracking-tight text-white text-opacity-90">
                 <span>Farees Construction Limited (FCL)</span>
               </h1>
               <p class="mt-6 tracking-tighter text-white">
-                <span class="font-serif italic font-normal text-3xl md:text-4xl lg:text-6xl">
+                <span class=" font-normal text-3xl md:text-4xl lg:text-6xl">
                   <strong>For a Green Future with Trust and Quality</strong>
                 </span>
               </p>

@@ -314,34 +314,216 @@ const Equipment = () => {
         </div>
       </div>
       <div className="mx-5 lg:container lg:mx-auto lg:max-w-[1200px] pb-20">
-        <h2 className="text-3xl font-serif border-l-4 border-green-500 pl-3 uppercase">
+        <h2 className="text-4xl text-center font-bold pl-3 uppercase">
           List Of Equipment
         </h2>
         <div className="overflow-x-auto mt-5">
-          <table className="table-auto w-full border-collapse lg:max-w-[1200px]">
-            <thead>
-              <tr>
-                <th className="border p-2 text-left">S/No</th>
-                <th className="border p-2 text-left">
-                  Equipment Type and Characteristics
-                </th>
-                <th className="border p-2 text-left">Ownership</th>
-                <th className="border p-2 text-left">Unit</th>
-                <th className="border p-2 text-left">Quantity</th>
-              </tr>
-            </thead>
-            <tbody>
-              {equipmentList.map((item) => (
-                <tr key={item.SNo}>
-                  <td className="border p-2 font-bold">{item.SNo}</td>
-                  <td className="border p-2">{item.Equipment}</td>
-                  <td className="border p-2">{item.Ownership}</td>
-                  <td className="border p-2">{item.Unit}</td>
-                  <td className="border p-2">{item.Quantity}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <div className="container p-2 mx-auto rounded-md sm:p-4 dark:text-gray-800 dark:bg-gray-50">
+            <div className="overflow-x-auto">
+              <table className="min-w-full text-lg">
+                <thead className="rounded-t-lg dark:bg-gray-300">
+                  <tr className="text-right">
+                    <th title="Ranking" className="p-3 text-left">
+                      Serial NO
+                    </th>
+                    <th title="Team name" className="p-3 text-left">
+                      Equipment TYpe & Characteristics
+                    </th>
+                    <th title="Wins" className="p-3">
+                      Ownership
+                    </th>
+                    <th title="Losses" className="p-3">
+                      Unit
+                    </th>
+                    <th title="Win percentage" className="p-3">
+                      Quantity
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="text-right border-b border-opacity-20 dark:border-gray-300 dark:bg-gray-100">
+                    <td className="px-3 py-2 text-left">
+                      <span>1</span>
+                    </td>
+                    <td className="px-3 py-2 text-left">
+                      <span>50T Mobile Crane (wheel type)</span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>Own/Rent </span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>Nos</span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>2</span>
+                    </td>
+                  </tr>
+
+                  <tr className="text-right border-b border-opacity-20 dark:border-gray-300 dark:bg-gray-100">
+                    <td className="px-3 py-2 text-left">
+                      <span>2</span>
+                    </td>
+                    <td className="px-3 py-2 text-left">
+                      <span>50T Mobile Crane (wheel type)</span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>Own/Rent </span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>Nos</span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>4</span>
+                    </td>
+                  </tr>
+
+                  <tr className="text-right border-b border-opacity-20 dark:border-gray-300 dark:bg-gray-100">
+                    <td className="px-3 py-2 text-left">
+                      <span>3</span>
+                    </td>
+                    <td className="px-3 py-2 text-left">
+                      <span>50T Mobile Crane (wheel type)</span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>Own/Rent </span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>Nos</span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>6</span>
+                    </td>
+                  </tr>
+
+                  <tr className="text-right border-b border-opacity-20 dark:border-gray-300 dark:bg-gray-100">
+                    <td className="px-3 py-2 text-left">
+                      <span>4</span>
+                    </td>
+                    <td className="px-3 py-2 text-left">
+                      <span>50T Mobile Crane (wheel type)</span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>Own/Rent </span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>Nos</span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>8</span>
+                    </td>
+                  </tr>
+
+                  <tr className="text-right border-b border-opacity-20 dark:border-gray-300 dark:bg-gray-100">
+                    <td className="px-3 py-2 text-left">
+                      <span>5</span>
+                    </td>
+                    <td className="px-3 py-2 text-left">
+                      <span>50T Mobile Crane (wheel type)</span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>Own/Rent </span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>Nos</span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>10</span>
+                    </td>
+                  </tr>
+
+                  <tr className="text-right border-b border-opacity-20 dark:border-gray-300 dark:bg-gray-100">
+                    <td className="px-3 py-2 text-left">
+                      <span>6</span>
+                    </td>
+                    <td className="px-3 py-2 text-left">
+                      <span>50T Mobile Crane (wheel type)</span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>Own/Rent </span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>Nos</span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>12</span>
+                    </td>
+                  </tr>
+
+                  <tr className="text-right border-b border-opacity-20 dark:border-gray-300 dark:bg-gray-100">
+                    <td className="px-3 py-2 text-left">
+                      <span>7</span>
+                    </td>
+                    <td className="px-3 py-2 text-left">
+                      <span>50T Mobile Crane (wheel type)</span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>Own/Rent </span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>Nos</span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>1</span>
+                    </td>
+                  </tr>
+
+                  <tr className="text-right border-b border-opacity-20 dark:border-gray-300 dark:bg-gray-100">
+                    <td className="px-3 py-2 text-left">
+                      <span>8</span>
+                    </td>
+                    <td className="px-3 py-2 text-left">
+                      <span>50T Mobile Crane (wheel type)</span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>Own/Rent </span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>Nos</span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>1</span>
+                    </td>
+                  </tr>
+
+                  <tr className="text-right border-b border-opacity-20 dark:border-gray-300 dark:bg-gray-100">
+                    <td className="px-3 py-2 text-left">
+                      <span>9</span>
+                    </td>
+                    <td className="px-3 py-2 text-left">
+                      <span>50T Mobile Crane (wheel type)</span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>Own/Rent </span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>Nos</span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>1</span>
+                    </td>
+                  </tr>
+
+                  <tr className="text-right border-b border-opacity-20 dark:border-gray-300 dark:bg-gray-100">
+                    <td className="px-3 py-2 text-left">
+                      <span>10</span>
+                    </td>
+                    <td className="px-3 py-2 text-left">
+                      <span>50T Mobile Crane (wheel type)</span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>Own/Rent </span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>Nos</span>
+                    </td>
+                    <td className="px-3 py-2">
+                      <span>1</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -23,26 +23,48 @@ const Nav = () => {
   const navItems = (
     <>
       <li>
-        <Link href="/about">About Us</Link>
+        <Link href="/about">Home</Link>
+      </li>
+      <li>
+        <Link href="/about">EXplore Us</Link>
+      </li>
+      <li>
+        <Link href="/area-of-activities">Area of Activities</Link>
+      </li>
+      <li>
+        <Link href="/about">CSR</Link>
       </li>
       <li className="relative group">
         <span className="cursor-pointer flex items-center">
-          Equipments <GoChevronDown className="ml-1 font-bold text-2xl" />
+          Associate With <GoChevronDown className="ml-1 font-bold text-2xl" />
         </span>
         <ul className="absolute left-0 mt-10 hidden bg-white opacity-80 text-black shadow-md rounded-md group-hover:block w-60 p-2">
           <li>
-            <Link href="/list-equipments">Equipments List</Link>
+            <Link href="/company-1">Company 1</Link>
           </li>
           <li>
-            <Link href="/photo-equipments">Equipments Photos</Link>
+            <Link href="/company-2">Company 2</Link>
+          </li>
+        </ul>
+      </li>
+      <li className="relative group">
+        <span className="cursor-pointer flex items-center">
+          Equipment&apos;s <GoChevronDown className="ml-1 font-bold text-2xl" />
+        </span>
+        <ul className="absolute left-0 mt-10 hidden bg-white opacity-80 text-black shadow-md rounded-md group-hover:block w-60 p-2">
+          <li>
+            <Link href="/list-equipments">Equipment List</Link>
+          </li>
+          <li>
+            <Link href="/photo-equipments">Equipment Photos</Link>
           </li>
         </ul>
       </li>
       <li>
-        <Link href="/certificates">Certificates</Link>
+        <Link href="/project">Projects</Link>
       </li>
       <li>
-        <Link href="/organogram">Organogram</Link>
+        <Link href="/about">Career</Link>
       </li>
       <li>
         <Link href="/gallery">Gallery</Link>
@@ -80,7 +102,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <div className="fancyNav sticky top-0 z-50 font-bold font-serif text-white shadow-md">
+    <div className=" bg-green-800 fancyNav sticky top-0 z-50 font-bold  text-white shadow-md">
       <div className="navbar flex justify-between items-center">
         <div className="container mx-auto flex justify-between items-center">
           <div className="navbar-start flex items-center">
@@ -112,7 +134,7 @@ const Nav = () => {
                 {navItems}
               </ul>
             </div>
-            <Link href="/" className="text-3xl font-serif">
+            <Link href="/" className="text-3xl ">
               <Image
                 src={logo}
                 className="w-12"
@@ -130,7 +152,7 @@ const Nav = () => {
             <a
               onClick={onButtonClick}
               href="#"
-              className="bg-green-800 hover:bg-green-700 hover:text-white duration-500 font-serif rounded-full px-5 py-2 flex items-center cursor-pointer"
+              className="bg-green-700 hover:bg-green-700 hover:text-white duration-500 rounded-full px-5 py-2 flex items-center cursor-pointer"
             >
               Brochure <MdOutlineFileDownload className="ml-2 text-xl" />
             </a>

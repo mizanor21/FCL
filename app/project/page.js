@@ -7,15 +7,15 @@ import road from "@/public/assets/recentWorks/road.jpg";
 import UN from "@/public/assets/recentWorks/UN.jpg";
 import constraction from "@/public/assets/recentWorks/constraction1.jpg";
 
-const RecentWorks = () => {
+const Project = () => {
   const imageHeight = 300; // Set a uniform height for all images
 
   return (
     <div className="py-20" id="recent-works">
       <div className="mx-5 lg:container lg:mx-auto">
         <div>
-          <h2 className="text-3xl  border-l-4 border-green-700 hover:bg-opacity-50 pl-3 uppercase">
-            Recent Works
+          <h2 className="text-3xl border-l-4 border-green-700 hover:bg-opacity-50 pl-3 uppercase">
+            List of projects
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
@@ -157,4 +157,4 @@ const RecentWorks = () => {
   );
 };
 
-export default RecentWorks;
+export default Project;

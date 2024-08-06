@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="bg-gradient-to-r from-green-800 bg-green-900 py-10">
       <footer className="footer container mx-auto p-10 text-white">
         <aside>
-          <Link href="/" className="text-3xl font-serif">
+          <Link href="/" className="text-3xl ">
             <Image
               src={logo}
               className="w-12"
